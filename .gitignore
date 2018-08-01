@@ -4,8 +4,24 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+
+*.rbc
+capybara-*.html
+.rspec
+/public/system
+/public/assets
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+session
+request
 # Ignore bundler config.
 /.bundle
+/.bundle
+/vendor/bundle
+/vendor/cache/
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -19,3 +35,10 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore application configuration
+/config/application.yml
+
+# Ignore OSx generated files
+.DS_Store
+.idea/
