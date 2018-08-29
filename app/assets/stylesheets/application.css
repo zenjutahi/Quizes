@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+ .container {
+   min-width: 92%;
+   padding-top: 1em;
+ }
+ .card-img-top {
+   max-height: 130px;
+   max-width: 80px;
+ }
+ .card col-sm {
+   display: flex;
+   flex-direction: row;
+ }
+
+ body {
+   background: #f3f3f3;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+   padding: 0 !important;
+   margin: 0 !important;
+ }
+.answer_view {
+  margin: inherit;
+  padding-left: 210px
+}
