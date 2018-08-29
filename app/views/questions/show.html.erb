@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="card col-sm-12 lead" style="width: 18rem;">
+      <div class="card-body">
+        <img class="card-img-top" src="<%= @question.gravator %>" alt="Card image cap">
+        <h5 class="card-title"><%= @question.email %> asked:</h5>
+        <p class="card-text"><%= @question.body %></p>
+      </div>
+    </div>
+  </div>
+  <div class="container answer_view">
+    <div>
+      <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#answer-modal">Submit new answer</button>
+    </div>
+    <%= render 'home/new_answer_form' %>
+      <div class="card-body">
+        <h5 class="card-title">jeff@mail.com</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up.</p>
+      </div>
+    <hr>
+      <div class="card-body">
+        <h5 class="card-title">jeff@mail.com</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up.</p>
+      </div>
+    <hr>
+      <div class="card-body">
+        <h5 class="card-title">jeff@mail.com</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up.</p>
+      </div>
+  </div>
+</div>
