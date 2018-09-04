@@ -6,14 +6,3 @@ module HasGravator
   end
   
 end
-
-
-
-
-
-
-decision_reason_ids = [10,7]
-for decision_reason_ids.each do |id|
-  s = DecisionReasonStatus.new(decision_reason_id: id, decision_status_id: 8)
-  s.save
-end

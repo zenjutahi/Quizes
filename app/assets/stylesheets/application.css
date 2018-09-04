@@ -47,3 +47,7 @@
   margin: inherit;
   padding-left: 210px
 }
+
+.alert-info {
+  width: 1000px;
+}
