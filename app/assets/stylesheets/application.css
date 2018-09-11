@@ -43,11 +43,12 @@
    padding: 0 !important;
    margin: 0 !important;
  }
+ 
 .answer_view {
   margin: inherit;
-  padding-left: 210px
+  padding-left: 210px;
 }
 
-.alert-info {
-  width: 1000px;
+.navbar-text{
+  padding: 0.5em;
 }
