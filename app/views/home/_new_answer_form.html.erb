@@ -1,4 +1,4 @@
-<div class="modal" id="answer-modal" tabindex="-1" role="dialog">
+<div class="modal fade" id="answer-modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -8,14 +8,15 @@
         </button>
       </div>
       <%= form_for :answer, url: '/answers', html: { class: 'form-horizontal'} do %>
+        <input type="hidden" name="answer[question_id]" value="<%= @question.id %>" />
         <div class="modal-body">
           <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
-            <input type="email" name="email" class="form-control" id="InputEmail" placeholder="Enter email" required>
+            <input type="email" name="answer[email]" class="form-control" value="<%= current_user_email %>"id="InputEmail" placeholder="Enter email" required>
           </div>
           <div class="form-group">
             <label for="answerarea">Answer</label>
-            <textarea class="form-control" name="answer_body" id="InputAnswer" placeholder="Enter your answer..." required></textarea>
+            <textarea class="form-control" name="answer[body]" id="InputAnswer" placeholder="Enter your answer..." required></textarea>
           </div>
         </div>
         <div class="modal-footer">

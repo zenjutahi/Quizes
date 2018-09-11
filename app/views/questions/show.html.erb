@@ -13,19 +13,17 @@
       <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#answer-modal">Submit new answer</button>
     </div>
     <%= render 'home/new_answer_form' %>
+
+    <% @answers.each do |answer| %>
       <div class="card-body">
-        <h5 class="card-title">jeff@mail.com</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up.</p>
+        <h5 class="card-title"><%= answer.email%> <small>answered :</small></h5>
+        <small><%= time_ago_in_words answer.created_at %> ago</small>
+        <p class="card-text"><%= answer.body %></p>
+        <hr/>
       </div>
-    <hr>
-      <div class="card-body">
-        <h5 class="card-title">jeff@mail.com</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up.</p>
-      </div>
-    <hr>
-      <div class="card-body">
-        <h5 class="card-title">jeff@mail.com</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up.</p>
-      </div>
+    <% end %>
+    <% if @answers.empty? %>
+      <div class="alert alert-info">Nothing here yet, be the first to answer?</div>
+    <% end %>
   </div>
 </div>

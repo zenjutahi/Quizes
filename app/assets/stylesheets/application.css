@@ -30,6 +30,10 @@
  body {
    background: #f3f3f3;
  }
+ 
+ a {
+   color: #FFFFFF !important;
+ }
 
  h1,
  h2,
@@ -39,7 +43,12 @@
    padding: 0 !important;
    margin: 0 !important;
  }
+ 
 .answer_view {
   margin: inherit;
-  padding-left: 210px
+  padding-left: 210px;
+}
+
+.navbar-text{
+  padding: 0.5em;
 }
